@@ -51,4 +51,4 @@ services:
       - NET_ADMIN
 
     volumes:
-      - "./wireguard/tunnel.conf:/tunnel.conf"
+      - "./wireguard/tunnel.conf:/etc/wireguard/tunnel.conf"

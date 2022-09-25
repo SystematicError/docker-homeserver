@@ -3,4 +3,4 @@ FROM alpine:latest
 RUN apk add wireguard-tools
 
 # A bit hacky, but the tail command is being run to keep the container open
-CMD ["sh", "-c", "wg-quick up /tunnel.conf && tail -f /dev/null"]
+CMD ["sh", "-c", "wg-quick up tunnel && tail -f /dev/null"]
