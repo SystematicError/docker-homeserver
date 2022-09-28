@@ -18,9 +18,6 @@ services:
     ports:
       - "3000:80"
     
-    expose:
-      - 80
-
     environment:
       POSTGRES_HOST: postgres
       POSTGRES_DB: nextcloud
@@ -39,16 +36,3 @@ services:
       POSTGRES_USER: nextcloud
       POSTGRES_PASSWORD: nextcloud
 
-  wireguard:
-    image: wireguard
-    build: ./wireguard
-    container_name: wireguard
-    
-    profiles:
-      - port_forward
-
-    cap_add:
-      - NET_ADMIN
-
-    volumes:
-      - "./wireguard/tunnel.conf:/etc/wireguard/tunnel.conf"
