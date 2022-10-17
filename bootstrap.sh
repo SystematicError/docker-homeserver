@@ -9,7 +9,7 @@ cd
 apk update
 apk upgrade
 
-apk add git podman wireguard-tools
+apk add git podman
 apk add --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing/ podman-compose
 
 git clone https://github.com/SystematicError/docker-homeserver
