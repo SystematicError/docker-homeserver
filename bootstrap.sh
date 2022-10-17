@@ -12,5 +12,5 @@ apk upgrade
 apk add git podman
 apk add --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing/ podman-compose
 
-git clone https://github.com/SystematicError/docker-homeserver
+git clone https://github.com/SystematicError/docker-homeserver homeserver
 
