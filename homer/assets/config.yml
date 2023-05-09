@@ -53,6 +53,12 @@ services:
     items:
       - name: "Vaultwarden"
         subtitle: "Password manager"
-        logo: "assets/tools/vaultwarden.png"
+        logo: "assets/tools/vaultwarden.svg"
         url: "http://localhost:3000"
         target: "_blank"
+
+      - name: "Wireguard"
+        subtitle: "VPN Tunnel"
+        logo: "assets/tools/wireguard.png"
+        url: "http://localhost:51821"
+        target: "_blank" 

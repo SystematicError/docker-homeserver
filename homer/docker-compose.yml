@@ -15,4 +15,3 @@ services:
 
         environment:
             INIT_ASSETS: 0
-
