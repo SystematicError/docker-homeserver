@@ -5,13 +5,13 @@ services:
         image: vaultwarden/server:alpine
         container_name: vaultwarden
 
-        restart: always
+        restart: unless-stopped
 
         volumes:
-          - "./data:/data"
+          - ./data:/data
 
         ports:
-          - "3000:80"
+          - 3000:80
 
         environment:
             SIGNUPS_ALLOWED: "false"

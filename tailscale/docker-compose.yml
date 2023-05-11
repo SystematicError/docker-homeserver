@@ -1,0 +1,22 @@
+version: "3.7"
+
+services:
+    tailscale:
+        image: tailscale/tailscale
+        container_name: tailscale
+
+        network_mode: host
+
+        cap_add:
+          - NET_ADMIN
+          - NET_RAW
+
+        restart: unless-stopped
+
+        volumes:
+          # - /var/lib:/var/lib
+          - /dev/net/tun:/dev/net/tun
+
+        env_file:
+          - config.env
+
