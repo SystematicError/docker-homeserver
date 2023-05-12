@@ -14,7 +14,6 @@ services:
         restart: unless-stopped
 
         volumes:
-          # - /var/lib:/var/lib
           - /dev/net/tun:/dev/net/tun
 
         env_file:
