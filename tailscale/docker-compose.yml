@@ -14,8 +14,12 @@ services:
         restart: unless-stopped
 
         volumes:
+          - ./tailscale:/var/lib/tailscale
           - /dev/net/tun:/dev/net/tun
 
         env_file:
           - config.env
+
+        environment:
+            TS_STATE_DIR: /var/lib/tailscale
 
