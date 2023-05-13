@@ -50,6 +50,11 @@ services:
         logo: assets/tools/vaultwarden.svg
         url: http://raspberry:3000
         target: _blank
+      
+      - name: Memos
+        subtitle: Notes and Todo List
+        url: http://raspberry:4000
+        target: _blank
 
       - name: Tailscale
         subtitle: VPN Tunnel
