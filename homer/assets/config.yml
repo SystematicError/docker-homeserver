@@ -46,7 +46,7 @@ services:
 
     items:
       - name: Vaultwarden
-        subtitle: Password manager
+        subtitle: Password Manager
         logo: assets/tools/vaultwarden.svg
         url: http://raspberry:3000
         target: _blank
